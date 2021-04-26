@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习2</title>
+</head>
+<body>
+    <div>马上就放学了</div>
+</body>
+</html>
+
+
+<script>
+
+var arr1=[11,22,3]
+//遍历数组
+arr1.forEach (function(v,k){
+    console.log(arr1)
+})
+
+//length  获取数组长度
+
+console.log(arr1.length);
+
+//函数
+
+//通过构造函数创建
+//通过函数声明创建
+
+function add(num1,num2){
+    return num1+num2;
+}
+// var num1=100;
+// var num2=200;
+// console.log(num1+num2);
+// console.log(add(100,200));
+
+//concat  链接
+var arr1=[1,2,3];
+var arr2=arr1.concat(4,5);
+console.log(arr2);//返回数组长度和值
+
+//join  数组元素链接成字符串
+
+var arr=["李四",20,'男'];
+console.log(arr.join('*'));
+
+
+//数组末尾元素移出
+
+//   console.log(arr.pop());//返回移出的值
+  
+//push 在数组末尾增加一个或多个元素
+
+console.log(arr.push("学生"));//返回数组长度
+
+//shift 
+//数组开头将数组元素移出
+console.log(arr.shift());//返回移出的值
+//unshift 在数组开头加入一个或多个元素
+console.log(arr.unshift('11','22'));//返回数组的长度
+
+//slice  数组截取
+
+console.log(arr.slice(0,1));//第一个值是下标第二个值是截取的位数
+
+//Reverse 数组反转
+
+console.log(arr.reverse());//数组的数字会按照从大到小排序先大后小
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+//sort 数组排序
+
+console.log(arr.sort());//先小后大
+
+
+</script>
