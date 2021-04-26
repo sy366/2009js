@@ -59,8 +59,33 @@ console.log(arr);
     // 封装一个$函数，并实现DOM节点查找功能 id查找、class查找、元素查找
 
 
-    function $()
+    function $(param){
+        var obj=null;
+        if(param.substr(0,1)=="#"){
+            obj= document.querySelector(param)
+        }else if(param.substr(0,1)=="."){
+            obj= document.querySelectorAll(param)
+        }else{
+            obj= document.querySelectorAll(param)
+        }
 
+
+        obj.onn=function(event,fn){
+            obj.addEventListener(event,fn)
+            
+        }
+        return obj;
+    }
+
+    
+  $("#p1").onn('click',function(){
+      alert(123)
+  })
+
+
+  var a=$("#p1")
+  console.log(a);
+  
 
 
 
