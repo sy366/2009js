@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚自习作业</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var num=0;
+    var arr = [11,22,22,55,66,11,88,66,77,66];
+    //计算元素66在数组中位置
+//    arr.forEach(function (v,k) {
+//        if(v==66){
+//            console.log(k);//66的下标 
+//        }
+//        num+=v;
+       
+//    });
+//    console.log(num);//所有和相加
+
+
+   //移出数组中的所有值等于22的元素，不要直接修改数组arr,结果返回新的数组
+
+//    function remove(arr,item){
+//        return arr.filter(function(ele){
+//            return ele != item;
+//        })
+//    }
+
+
+arr.splice(1,2);
+console.log(arr);
+
+//	移除数组 arr 中的所有值等于 22 的元素，直接在给定的 arr 数组上进行操作，并将结果返回。
+    delete arr[22];
+    console.log(arr);
+
+    //统计数组 arr 中值等于 66 的元素出现的次数
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]==66){
+            num++;
+        }
+    }
+
+    console.log(num)
+
+
+
+
+
+
+
+    // 封装一个$函数，并实现DOM节点查找功能 id查找、class查找、元素查找
+
+
+    function $()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
